@@ -10,7 +10,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.post("/contact", async (req, res) => {
-    console.log("Received Data:", req.body);
 
     // Extract form data
     const { name, email, message } = req.body;
